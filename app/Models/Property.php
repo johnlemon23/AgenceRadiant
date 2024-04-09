@@ -15,7 +15,7 @@ class Property extends Model
         'surface',
         'rooms',
         'bedrooms',
-        'floors',
+        'floor',
         'price',
         'city',
         'address',

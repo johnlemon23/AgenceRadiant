@@ -27,7 +27,7 @@ class PropertyFormRequest extends FormRequest
             'surface' => ['required', 'integer', 'min:10'],
             'rooms' => ['required', 'integer', 'min:1'],
             'bedrooms' => ['required', 'integer', 'min:0'],
-            'floors' => ['required', 'integer', 'min:0'],
+            'floor' => ['required', 'integer', 'min:0'],
             'price' => ['required', 'integer', 'min:0'],
             'city' => ['required', 'min:8'],
             'address' => ['required', 'min:8'],

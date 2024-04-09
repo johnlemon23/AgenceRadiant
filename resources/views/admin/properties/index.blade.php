@@ -11,11 +11,11 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Titre</th>        
-            <th>Surface</th>        
-            <th>Prix</th>        
-            <th>Ville</th>        
-            <th class="text-end">Actions</th>        
+            <th>Titre</th>
+            <th>Surface</th>
+            <th>Prix</th>
+            <th>Ville</th>
+            <th class="text-end">Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -28,7 +28,7 @@
                 <td>
                     <div class="d-flex gap-2 w-100 justify-content-end">
                         <a href="{{ route('admin.property.edit', $property) }}" class="btn btn-primary">Editer</a>
-                        <form action="{{ route('admin.property.destroy', $property)}}">
+                        <form action="{{ route('admin.property.destroy', $property)}}" method="post">
                         @csrf
                         @method("delete")
                         <button class="btn btn-danger">Supprimer</button>
